@@ -9,7 +9,7 @@ class Scraper
   def self.city_by_zip(num)
     url = "https://www.wunderground.com/cgi-bin/findweather/getForecast?query=pz:#{num}1&zip=1"
     doc = Nokogiri::HTML(open(url))
-    binding.pry 
+    #binding.pry 
   end
 
 end
